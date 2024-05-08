@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form below.</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+    <label for="dropdown">Select your country:</label>
+    <select id="dropdown" name="country">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="uk">UK</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <fieldset>
+      <legend>Select your gender:</legend>
+      <label><input type="radio" name="gender" value="male">Male</label>
+      <label><input type="radio" name="gender" value="female">Female</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select your interests:</legend>
+      <label><input type="checkbox" name="interests" value="sports">Sports</label>
+      <label><input type="checkbox" name="interests" value="music">Music</label>
+      <label><input type="checkbox" name="interests" value="travel">Travel</label>
+      <label><input type="checkbox" name="interests" value="technology">Technology</label>
+    </fieldset>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

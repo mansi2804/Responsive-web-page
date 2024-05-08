@@ -1,0 +1,65 @@
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Welcome section styles */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Projects section styles */
+#projects {
+  padding: 20px;
+}
+
+.project-tile {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-tile a {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Profile link styles */
+#profile-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}

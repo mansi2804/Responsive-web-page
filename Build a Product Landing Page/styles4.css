@@ -1,0 +1,86 @@
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+#header-img {
+  height: 50px; /* Adjust height as needed */
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main section styles */
+main {
+  padding-top: 80px; /* Ensure content is below the navbar */
+}
+
+section {
+  padding: 50px 0;
+}
+
+/* Form styles */
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Example: Adjust styles for smaller screens */
+  #header-img {
+    height: 40px; /* Decrease header image size */
+  }
+
+  .nav-link {
+    margin: 0 5px; /* Decrease margin for navigation links */
+  }
+
+  input[type="email"] {
+    width: 80%; /* Make email input full width */
+  }
+}

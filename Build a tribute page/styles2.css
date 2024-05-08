@@ -1,0 +1,15 @@
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /
+  }
+  #image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /
+  }
+  #img-div {
+    text-align: center; /* Center align its children (including the image) */
+  }

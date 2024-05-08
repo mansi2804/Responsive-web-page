@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #4d4e53;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/*General CSS*/
+
+header {
+    color: black;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f7f7f7;
+    padding: 15px;
+    line-height: 2;
+    display: block;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+article {
+    margin-left: 25px;
+    font-size: 1.1em;
+}
+
+/*NavBar Related CSS*/
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22%;
+    height: 100%;
+    border-right: solid;
+    border-color: #b3b5b6;
+    overflow-y: auto;
+}
+
+#navbar > header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid;
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+/*Main-Doc Related CSS*/
+
+#main-doc {
+    position: absolute;
+    margin-left: 340px;
+    padding: 40px;
+}
+
+section > header {
+    font-size: 1.9em;
+}
+
+.main-section header {
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    margin-bottom: 18px;
+}
+
+article ul {
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article li {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        display: flex;
+    }
+}
